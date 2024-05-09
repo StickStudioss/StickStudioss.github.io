@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-square {
+    background-color: #FFFFFF;
+    border: 4px solid #000000;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    min-width: 500px;
+    min-height: 500px;
+}
+
+@media (max-width: 768px) {
+    .centered-square {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .centered-square {
+        width: 95%;
+    }
+}
